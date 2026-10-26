@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home FIGHTPLAY</title>
+
+    <style>
+
+        @font-face{
+            font-family:'pervitina';
+            src: url(./fonts/Pervitina.ttf);
+         }
+
+        body{
+            margin: 0;
+            background-color: #121212;
+            color: white;
+        }
+
+
+       header{
+            background-color: #121212;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid#ff0000;
+       }
+
+
+       header h1{
+           color:#cf1d1d;
+           font-family: 'pervitina';
+       }
+
+
+       nav{
+           text-align: center;
+           padding: 15px;
+       }
+
+
+       nav a{
+           color: white;
+           text-decoration: none;
+           margin: 15px;
+           font-weight: bold;
+           font-family: Arial, sans-serif;
+       }
+
+       nav a:hover{
+            color: #ff0000;
+       }
+
+       #banner{
+           text-align: center;
+           padding: 40px;
+           font-family: Arial, sans-serif;
+       }
+
+       #banner h2{ 
+           color: #db4141;
+           font-family: Arial, sans-serif;
+       }
+
+       #banner img{
+        width: 100%
+       }
+
+       #jogos{
+           display: flex;
+           justify-content: center;
+           gap: 20px;
+           flex-wrap: wrap;
+           padding: 20px;
+           font-family: Arial, sans-serif;
+       }
+
+       .card{
+           background-color: #aa0909;
+           width: 250px;
+           padding: 20px;
+           border-radius: 10px;
+           text-align: center;
+       }
+
+       .card img{
+          width: 250px;
+          height: 170px;
+          border-radius: 10px;
+       }
+
+       .card h3{
+          color: #040404;
+          font-family: Arial, sans-serif;
+       }
+
+       .card:hover{
+        transform: scale(1.04);
+        transition: 0.5s ease;
+       }
+
+       #ranking{
+         text-align: center;
+       }
+
+
+       .ranking-lista{
+
+         margin: auto;
+         border-collapse: collapse;
+         width: 900px;
+         text-align: center;
+         border: 1px solid #aa0909;
+       }
+
+       .top-5{
+
+         margin: auto;
+         border-collapse: collapse;
+         width: 500px;
+         text-align: center;
+         border: 1px solid #aa0909;
+       }
+
+        th, td{
+
+          border: 1px solid #aa0909;
+          padding: 8px 10px;
+        }
+
+
+        tr:hover{
+          background-color: #aa0909;
+          color:#121212
+        }
+
+
+        .card h3 a{
+          text-decoration: none;
+          color: inherit;
+       }
+       
+
+       .card h3 a:hover{
+          color: #580808;
+        }
+
+
+        footer{
+           text-align: center;
+           padding: 20px;
+           margin-top: 30px;
+           background-color: #1e1e1e;
+           font-family: Arial, sans-serif;
+       }
+
+    </style>
+
+           
+</head>
+   
+
+
+<body>
+
+    <header>
+        <h1>FIGHTPLAY🥷🏻</h1>
+    </header>
+    
+        <nav>
+            <a href="#banner">Início</a>
+            <a href="#jogos">Jogos</a>
+            <a href="#ranking">Ranking</a>
+            <a href="./login.html">Sair</a>
+        </nav>
+
+
+    <section id="banner">
+
+        <h2> Bem-vindo á Plataforma! </h2>
+        <p> A batalha começa aqui. Jogue, conquiste e seja lendário!</p>
+        <img src="./img/banner.png">
+
+    </section>
+
+
+    <section id="jogos">
+
+        <div class="card">
+            <img src="./img/injustice.jpeg" alt="Jodo de luta">
+
+            <h3>
+                <a href="./injustice.html">Injustice </a>
+            </h3>
+
+            <p>Entre heróis e vilões, apenas os mais fortes sobrevivem</p>
+
+        </div>
+
+
+        <div class="card">
+            <img src="./img/street-fighter.jpeg"alt="Jogo luta">
+
+            <h3>
+               <a href="./street-fighter.html">Street Fighter</a>
+            </h3>
+
+            <p>Mostre sua força e domine cada batalha</p>
+        </div>
+
+
+        <div class="card">
+            <img src="./img/mortal-kombat.jpeg" alt="Jogo de luta">
+
+             <h3>
+               <a href="./mortal-kombat.html">Mortal Kombat</a>
+            </h3>
+    
+            <p>Lute sem medo em um torneio mortal</p>
+        </div>
+
+
+
+    </section>
+
+
+    <section id="ranking">
+
+     <h1>Ranking dos 15 Melhores Jogos de Luta</h1>
+
+     <table class="ranking-lista">
+
+       <tr>
+         <th>Posição</th>
+         <th>Jogo</th>
+      </tr>
+
+         <tr><td>1º</td><td>Mortal Kombat 11</td></tr>
+        <tr><td>2º</td><td>Street Fighter 6</td></tr>
+        <tr><td>3º</td><td>Tekken 8</td></tr>
+        <tr><td>4º</td><td>Dragon Ball FighterZ</td></tr>
+        <tr><td>5º</td><td>Guilty Gear Strive</td></tr>
+        <tr><td>6º</td><td>The King of Fighters XV</td></tr>
+        <tr><td>7º</td><td>Injustice 2</td></tr>
+        <tr><td>8º</td><td>Super Smash Bros. Ultimate</td></tr>
+        <tr><td>9º</td><td>Soulcalibur VI</td></tr>
+        <tr><td>10º</td><td>BlazBlue Central Fiction</td></tr>
+        <tr><td>11º</td><td>Mortal Kombat X</td></tr>
+        <tr><td>12º</td><td>Street Fighter V</td></tr>
+        <tr><td>13º</td><td>Tekken 7</td></tr>
+        <tr><td>14º</td><td>Marvel vs. Capcom 3</td></tr>
+        <tr><td>15º</td><td>Skullgirls</td></tr>
+
+     </table>
+
+   
+
+      <h2>Top 5 Jogos de Luta</h2>
+
+      <table class="top-5">
+
+      <tr>
+        <th>Posição</th>
+        <th>Jogo</th>
+      </tr>
+
+      <tr><td>1º</td><td>Mortal Kombat 11</td></tr>
+      <tr><td>2º</td><td>Street Fighter 6</td></tr>
+      <tr><td>3º</td><td>Tekken 8</td></tr>
+      <tr><td>4º</td><td>Dragon Ball FighterZ</td></tr>
+      <tr><td>5º</td><td>Guilty Gear Strive</td></tr>
+
+      </table>   
+
+
+
+    </section>
+
+
+    
+    <footer>
+        &copy; Fightplay 2026
+    </footer>
+
+    
+</body>
+</html>

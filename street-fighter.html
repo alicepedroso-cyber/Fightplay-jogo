@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Injustice</title>
+
+    <style>
+
+        @font-face{
+            font-family:'pervitina';
+            src: url(./fonts/Pervitina.ttf);
+         }
+
+        body{
+            margin: 0;
+            background-color: #121212;
+            color: white;
+        }
+
+
+       header{
+            background-color: #121212;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid#ff0000;
+       }
+
+
+       header h1{
+           color:#cf1d1d;
+           font-family: 'pervitina';
+       }
+
+
+       nav{
+           text-align: center;
+           padding: 15px;
+       }
+
+
+       nav a{
+           color: white;
+           text-decoration: none;
+           margin: 15px;
+           font-weight: bold;
+           font-family: Arial, sans-serif;
+       }
+
+       nav a:hover{
+            color: #ff0000;
+       }
+
+       #game{
+           display: flex;
+           justify-content: center;
+           gap: 20px;
+           flex-wrap: wrap;
+           padding: 20px;
+           font-family: Arial, sans-serif;
+       }
+
+       .card{
+           background-color: #aa0909;
+           width: 450px;
+           padding: 20px;
+           border-radius: 10px;
+           text-align: center;
+           margin-top: 20px;
+       }
+
+       .card img{
+          width: 450px;
+          height: 300px;
+          border-radius: 10px;
+       }
+
+        .btn-game{
+
+            margin-top: 20px;
+            background-color: #e00808;
+            color:#040404;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s ease;
+
+        }
+
+        .btn-game:hover{
+            background-color: #ec0b0b;
+            color: #121212;
+            box-shadow: 0 0 15px #e15555;
+            transform: translateY(-2px);
+        }
+
+        .btn-game:active{
+            transform:scale(0.95);
+        }
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <h1>FIGHTPLAY🥷🏻</h1>
+    </header>
+    
+        <nav>
+            <a href="./home.html">Início</a>
+            <a href="./home.html#jogos">Jogos</a>
+            <a href="./home.html#ranking">Ranking</a>
+            <a href="./login.html">Sair</a>
+        </nav>
+
+        <section id="game">
+
+         <div class="card">
+            <img src="./img/street-fighter.jpeg"alt="Jogo luta">
+            
+            <a href="https://www.youtube.com/watch?v=Giuzee6lkjI" target="_blank" class="btn-game">🥷🏻 Jogar</a>
+
+            <p>Mostre sua força e domine cada batalha</p>
+
+         </div>
+
+        </section>
+    
+</body>
+</html>
